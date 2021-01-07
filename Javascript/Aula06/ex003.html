@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+        h1, p {
+            color: teal;
+            font-size: 25pt;
+            font-family: Arial; /* Comentário em CSS*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Tratando Variáveis</h1> <!-- Comentário em HTML -->
+    <p>Iremos capturar e mostrar a variável.</p>
+    <script>
+        /*
+        o window.promt retorna uma String
+        */
+        var n1 = window.prompt('Digite o número 1: ') // String
+        var n2 = window.prompt('Digite o número 2: ') // String
+        /*
+        Number.parseInt(n) - para converter para INT
+        Number.parseFloat(n) - para converter para float
+        ou utilizar apenas Number(n)
+        */
+        var soma = Number(n1) + Number(n2)
+        window.alert(`Os números ${n1} + ${n2} = ${soma}`) // Concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+</html>
