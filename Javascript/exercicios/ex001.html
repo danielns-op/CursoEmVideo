@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 1</title>
+    <style>
+        body {
+            background-color: lightpink;
+            font: normal 15pt Arial;
+        }
+        div#info {
+            background-color: purple;
+            width: 200px;
+            height: 200px;
+            line-height: 60px;
+            text-align: justify;
+            color: white;
+            margin-top: 40px;
+        }
+        div#nom, div#ida, div#cida {
+            margin-top: 10px;
+        }
+        div#envio {
+            margin-left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando Exercícios</h1>
+    <p id="form">
+        <div id="nom">
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div id="ida">
+            <input type="number" name="idade" id="idade">
+        </div>
+        <div id="cida">
+            <input type="text" name="cidade" id="cidade">
+        </div>
+        <div id="envio">
+            <input type="button" value="Enviar" onclick="mostrarFormulario()">
+        </div>
+    </p>
+    <p id="result">
+        <div id="info">
+              Nome:<br>
+             Idade:<br>
+            Cidade:
+        </div>
+    </p>
+
+    <script>
+        var aNome = window.document.querySelector('div#nom')
+        var aIdade = window.document.querySelector('div#ida')
+        var aCidade = window.document.querySelector('div#cida')
+        aNome.addEventListener('click', clicarNome)
+        aNome.addEventListener('mouseout', sairNome)
+        aIdade.addEventListener('click', clicarIdade)
+        aIdade.addEventListener('mouseout', sairIdade)
+        aCidade.addEventListener('click', clicarCidade)
+        aCidade.addEventListener('mouseout', sairCidade)
+
+        function clicarNome() {
+            aNome.style.background = 'chocolate'
+            aNome.style.width = '200px'
+        }
+        function sairNome() {
+            aNome.style.background = 'lightpink'
+            aNome.style.width = '200px'
+        }
+
+        function clicarIdade() {
+            aIdade.style.background = 'chocolate'
+            aIdade.style.width = '200px'
+        }
+        function sairIdade() {
+            aIdade.style.background = 'lightpink'
+            aIdade.style.width = '200px'
+        }
+
+        function clicarCidade() {
+            aCidade.style.background = 'chocolate'
+            aCidade.style.width = '200px'
+        }
+        function sairCidade() {
+            aCidade.style.background = 'lightpink'
+            aCidade.style.width = '200px'
+        }
+
+        function mostrarFormulario() {
+            var fNome = window.document.getElementById('nome')
+            var fIdade = window.document.getElementById('idade')
+            var fCidade = window.document.getElementById('cidade')
+            var info = window.document.querySelector('div#info')
+
+            var nome = fNome.value
+            var idade = fIdade.value
+            var cidade = fCidade.value
+
+            info.innerText = `Nome: ${nome}\nIdade: ${idade}\nCidade: ${cidade}` 
+        }
+    </script>
+</body>
+</html>
