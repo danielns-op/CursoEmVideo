@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(194, 192, 192);
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10pt;
+    margin: auto;
+    box-shadow: 5pt 5pt 15pt black;
+
+}
+
+input {
+    background: rgb(194, 191, 191);
+}
+
+p, div {
+    margin: 10pt;
+    text-align: center;
+}
+
+footer {
+    color: gray;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
