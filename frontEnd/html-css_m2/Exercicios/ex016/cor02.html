@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* Configurações globais da CSS*/
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to top, #29E3DD, #79FCF8, #21B3AF, #2F6362);
+            background-attachment: fixed; /* fixa a cor do background */
+        }
+
+        h1 {
+            width: 300px;
+        }
+
+        #top {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #insta {
+            background-image: linear-gradient(120deg, #5B63D2 10%, #B43994, #E43E62, #F97336, #FDC662);
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h1>Testando Gradiente</h1>
+    </div>
+    <div id="insta"></div>
+</body>
+</html>
